@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>nxf.me</title>
+    <link rel="stylesheet" type="text/css" href="styles/misc.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    <script defer src="src/etc/DOM.js"></script>
+    <script defer src="src/etc/links.js"></script>
+    <script defer src="src/etc/tabs.js"></script>
+    <link rel="icon" href="res/gator.png" type="image/gif" sizes="32x32"/>
+</head>
+<body>
+    <div class="flexBox column">
+        <a class="centeredTexts" id="header" style="margin-top: 1rem; font-size: 1.3rem">nxf.me</a>
+        <div class="flexBox row" style="margin-top: 0.5rem">
+            <button class="tabButton" onclick="switchTab('root')">root</button>
+            <button class="tabButton" onclick="switchTab('bin')">bin</button>
+            <button class="tabButton" onclick="switchTab('about')">about</button>
+            <button class="tabButton" onclick="switchTab('usr')">usr</button>
+        </div>
+    </div>
+    <div class="flexBox column" id="root">
+        <u class="centeredTexts headerText">my things</u>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/ordinal-pringles/')"><span style="font-size: 1.2rem; color: #20da45">Ordinal Pringles</span><br>My largest and most popular project. Actively developed.</button>
+        <button class="projButton" onclick="openLink('https://github.com/Acamaeda/The-Modding-Tree')"><span style="font-size: 1.2rem; color: #c691ff">The Modding Tree</span><br>A framework for making tree-based Incremental Games. Developed by Acamadea, updated and maintained by me.</button>
+        <button class="projButton" onclick="openLink('https://github.com/FlamemasterNXF/Sea')"><span style="font-size: 1.2rem; color: cornflowerblue">Sea</span><br>A programming language made in C#. Comes with a built-in REPL. Very simple, but pretty cool.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/Circles/')"><span style="font-size: 1.2rem; color: #dd9200">Circles</span><br>A true idle game. Grow your Circle to grow the higher Circles.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/Flame-Tree/')"><span style="font-size: 1.2rem; color: #f35e5e">Flame Tree</span><br>An ok TMT mod. My first major project.</button>
+    </div>
+    <div class="flexBox column" id="bin" style="display: none">
+        <a class="centeredTexts headerText"><s style="font-size: 0.9rem">all of</s> <u>most of my things</u></a>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/ordinal-pringles/')"><span style="font-size: 1.2rem">Ordinal Pringles</span><br>My largest and most popular project. Actively developed.</button>
+        <button class="projButton" onclick="openLink('https://github.com/Acamaeda/The-Modding-Tree')"><span style="font-size: 1.2rem">The Modding Tree</span><br>A framework for making tree-based Incremental Games. Developed by Acamadea, updated and maintained by me.</button>
+        <button class="projButton" onclick="openLink('https://github.com/FlamemasterNXF/Sea')"><span style="font-size: 1.2rem">Sea</span><br>A programming language made in C#. Comes with a built-in REPL. Very simple, but pretty cool.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/Circles/')"><span style="font-size: 1.2rem">Circles</span><br>A true idle game. Grow your Circle to grow the higher Circles.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/Flame-Tree/')"><span style="font-size: 1.2rem">Flame Tree</span><br>An ok TMT mod. My first major project.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/UC-Remake/')"><span style="font-size: 1.2rem">UC</span><br>An incomplete Incremental Game with a reasonable amount of content. My second attempt at making a JS game.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/the-grind-directors-cut/')"><span style="font-size: 1.2rem">The Grind: Director's Cut</span><br>A pretty good joke Incremental Game.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/The-Grind/')"><span style="font-size: 1.2rem">The Grind</span><br>A decent joke Incremental Game.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/the-grind-2/')"><span style="font-size: 1.2rem">The Grind 2</span><br>A less decent joke Incremental Game.</button>
+        <button class="projButton" onclick="openLink('https://github.com/FlamemasterNXF/PeanutScript/blob/main/README.md')"><span style="font-size: 1.2rem">PeanutScript</span><br>My first attempt at making a programming language. Made in Python and pretty buggy.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/Conways-Incremental/')"><span style="font-size: 1.2rem">Conway</span><br>Conway's Game of Life, recreated by me.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/Synergism-Plus/')"><span style="font-size: 1.2rem">Synergism Plus</span><br>A tool for making Synergism Mods. Has not been updated to recent Synergism versions (maybe one day).</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/Alternation/')"><span style="font-size: 1.2rem">Alternation</span><br>A short and bad Incremental Game. My first attempt at making a JS game.</button>
+        <button class="projButton" onclick="openLink('https://flamemasternxf.github.io/OperationSatisfaction/')"><span style="font-size: 1.2rem">Operation: Satisfaction</span><br>An idle game where you watch numbers go up. Circles if it had no visuals.</button>
+    </div>
+    <div class="flexBox column" id="about" style="display: none">
+        <u class="centeredTexts headerText">about me</u>
+        <a class="centeredTexts" style="margin-top: 1rem">Hello! I'm <span style="color: #a38dff">Flame</span>.<br>I usually make <span style="color: aquamarine">incremental games</span>, but I have also made some programming languages and tools. Nothing too crazy :)<br>I have a lot of experience with <span style="color: coral">C#</span> and <span style="color: coral">Javascript</span>. I also have some experience in Python, Rust, and C++.<br><br>I am 17 years old dual-enrolled highschool and college student. I plan to study <span style="color: red">Political Science</span> and go to law school.<br>I work as a lifeguard at my local pool, as well as a nearby indoor pool.<br>I also own a katana and love swords :)<br><br>You can contact me at any time on Discord! My handle is <span style="color: greenyellow">@flamemasternxf</span> I am always happy to chat :)<br><span style="font-size: 0.9rem; color: dimgray">It's also my handle on every other platform I use, if you're looking for me elsewhere.</span></a>
+        <div class="flexBox row" style="margin-top: 5rem;">
+            <a class="image" style="background-image: url(res/discord.png)" target="_blank" href="https://discord.com/invite/dauxGZwc9u"></a>
+            <a class="image" style="background-image: url(res/github.png)" target="_blank" href="https://github.com/FlamemasterNXF"></a>
+        </div>
+    </div>
+    <div class="flexBox column" id="usr" style="display: none">
+        <u class="centeredTexts headerText">thank you to:</u>
+        <a class="creditsText"><span style="color: #bbe5ff">yhvr</span>, for being an inspiration, helping me whenever I asked, and being a friend.</a>
+        <a class="creditsText"><span style="color: #bbe5ff">jacorb</span>, for being an inspiration for me and letting me use his CSS for my original homepage.</a>
+        <a class="creditsText"><span style="color: #bbe5ff">thepaperpilot</span>, for teaching me Git and basic JS.</a>
+        <a class="creditsText"><span style="color: #bbe5ff">ryanleonels</span>, for helping a lot with Ordinal Pringles and providing lots of feedback.</a>
+        <a class="creditsText"><span style="color: #bbe5ff">sw_creeperking</span>, for helping me prototype Sea and teaching me advanced C#.</a>
+        <a class="creditsText"><span style="color: #bbe5ff">themkeyholder</span>, for helping me a lot with TMT and providing the basics of Pringles' ordinal display code.</a>
+        <a class="creditsText"><span style="color: #bbe5ff">randomtuba</span>, for providing a lot of ideas and feedback for Ordinal Pringles.</a>
+        <a class="creditsText"><span style="color: #bbe5ff">Everyone who has ever given feedback on my games and projects.</span></a>
+        <a class="creditsText"><span style="color: #bbe5ff">Everyone in Meta Studio.</span></a>
+    </div>
+</body>
+</html>

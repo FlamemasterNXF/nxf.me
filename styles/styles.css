@@ -1,0 +1,74 @@
+.flexBox {
+    display: flex;
+    align-items: center;
+    place-content:center
+}
+.generalTexts{
+    color: white;
+    font-family: DosisLight, serif;
+}
+.centeredTexts{
+    color: white;
+    font-family: DosisLight, serif;
+    text-align: center;
+}
+.clickableTexts{
+    color: white;
+    font-family: DosisLight, serif;
+    text-align: center;
+    cursor: pointer;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerText{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: DosisMedium, serif
+}
+
+.image {
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.tabButton{
+    font-family: DosisLight, serif;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    background: #141117;
+    color: white;
+    border: 1px solid #141117;
+    cursor: pointer;
+}
+
+.projButton{
+    font-family: DosisLight, serif;
+    margin-top: 1rem;
+    background: #141117;
+    color: white;
+    border: 1px solid #141117;
+    cursor: pointer;
+}
+
+.creditsText{
+    color: white;
+    font-family: DosisLight, serif;
+    text-align: center;
+    margin-top: 0.5rem;
+}
