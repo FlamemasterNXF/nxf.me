@@ -1,3 +1,7 @@
 [submodule "ordinal-pringles"]
 	path = ordinal-pringles
 	url = https://github.com/FlamemasterNXF/ordinal-pringles
+[submodule "bunny"]
+	path = bunny
+	url = https://github.com/FlamemasterNXF/bunny
+	branch = main
