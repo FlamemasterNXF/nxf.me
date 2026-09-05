@@ -5,6 +5,7 @@
         link: normalizeLink(name) | string
         linkSrc: linkSrc.default | linkSrc
         lowercaseLink: false | bool
+        isMain: false | bool
 */
 
 const linkSrc = Object.freeze({
@@ -19,31 +20,37 @@ const linkData = [
         name: "Ordinal Pringles",
         desc: "My largest and most popular project. Actively developed.",
         link: "ordinal-pringles",
-        linkSrc: linkSrc.nxf
+        linkSrc: linkSrc.nxf,
+        isMain: true
     },
     {
         name: "Bunny Game",
         desc: "A fun little game about collecting bunnies.",
         link: "bunny",
-        linkSrc: linkSrc.nxf
+        linkSrc: linkSrc.nxf,
+        isMain: true
     },
     {
         name: "The Modding Tree",
         desc: "A framework for making tree-based Incremental Games. Originally developed by Acamadea, updated and maintained by me",
-        linkSrc: linkSrc.aca
+        linkSrc: linkSrc.aca,
+        isMain: true
     },
     {
         name: "Sea",
         desc: "A programming language made in C#, packaged with a custom REPL. Very simple but cool.",
-        linkSrc: linkSrc.githubRepo
+        linkSrc: linkSrc.githubRepo,
+        isMain: true
     },
     {
         name: "Flame Tree",
-        desc: "An ok TMT mod. My first major project."
+        desc: "An ok TMT mod. My first major project.",
+        isMain: true
     },
     {
         name: "Circles",
-        desc: "A true idle game. Grow your Circle to grow the higher Circles. Made before revolution idle."
+        desc: "A true idle game. Grow your Circle to grow the higher Circles. Made before revolution idle.",
+        isMain: true
     },
     {
         name: "UC",
@@ -117,9 +124,13 @@ function getProjectLink(i){
     return 'https://' + src + link
 }
 
+function showMoreProjects(){
+    domCache("moreContainer").style.display = "flex"
+    domCache("showMore").style.display = "none"
+}
 
-function initRootLinks(){
-    const container = DOM('root')
+function initMainLinks(){
+    const container = domCache('projectContainer')
     for (let i = 0; i < linkColors.length; i++) {
         let link = document.createElement('button');
         link.className = 'projButton'
@@ -128,18 +139,17 @@ function initRootLinks(){
         container.appendChild(link)
     }
 }
-function initLinks(){
-    const container = DOM('bin')
-
+function initAllLinks(){
+    const container = domCache('moreContainer')
     for (let i = 0; i < linkData.length; i++) {
+        if(linkData[i].isMain) continue;
         let link = document.createElement('button');
         link.className = 'projButton'
         link.onclick = () => openLink(getProjectLink(i))
-        link.innerHTML = `<span style="font-size: 1.2rem">${getProjectName(i)}</span><br>${getProjectDesc(i)}`
+        link.innerHTML = `<span style="font-size: 1.2rem; color: #dfdfdf">${getProjectName(i)}</span><br>${getProjectDesc(i)}`
         container.appendChild(link)
     }
-
-    initRootLinks()
+    initMainLinks()
 }
 
 function openLink(link) {
@@ -147,4 +157,4 @@ function openLink(link) {
     win.focus();
 }
 
-initLinks()
+initAllLinks()

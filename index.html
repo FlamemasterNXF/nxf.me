@@ -6,26 +6,24 @@
     <title>nxf.me</title>
     <link rel="stylesheet" type="text/css" href="styles/misc.css"/>
     <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-    <script defer src="src/DOM.js"></script>
+    <script defer src="src/domCache.js"></script>
     <script defer src="src/links.js"></script>
     <script defer src="src/tabs.js"></script>
     <link rel="icon" href="res/gator.png" type="image/gif" sizes="32x32"/>
 </head>
 <body>
     <div class="flexBox column">
-        <a class="centeredTexts" id="header" style="margin-top: 1rem; font-size: 1.3rem">nxf.me</a>
         <div class="flexBox row" style="margin-top: 0.5rem">
-            <button class="tabButton" onclick="switchTab('root')">root</button>
             <button class="tabButton" onclick="switchTab('bin')">bin</button>
             <button class="tabButton" onclick="switchTab('about')">about</button>
             <button class="tabButton" onclick="switchTab('usr')">usr</button>
         </div>
     </div>
-    <div class="flexBox column" id="root">
-        <u class="centeredTexts headerText">my things</u>
-    </div>
-    <div class="flexBox column" id="bin" style="display: none">
-        <a class="centeredTexts headerText"><s style="font-size: 0.9rem">all of</s> <u>more of my things</u></a>
+    <div class="flexBox column" id="bin">
+        <span class="centeredTexts headerText">Hi, I'm flame. These are some things I've made :)</span>
+        <div class="flexBox column" id="projectContainer"></div>
+        <button id="showMore" onclick="showMoreProjects()">show more?</button>
+        <div class="flexBox column" id="moreContainer" style="display: none"></div>
     </div>
     <div class="flexBox column" id="about" style="display: none">
         <u class="centeredTexts headerText">about me</u>

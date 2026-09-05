@@ -1,10 +1,7 @@
-let tab = "root"
+let tab = "bin"
 function switchTab(t){
     if(t === tab) return
-
-    DOM(`header`).innerText = t === 'root' ? 'nxf.me' : `nxf.me/${t}`
-
-    DOM(t).style.display = `flex`
-    DOM(tab).style.display = `none`
+    domCache(tab).style.display = `none`
+    domCache(t).style.display = `flex`
     tab = t
 }

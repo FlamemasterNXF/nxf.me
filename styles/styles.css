@@ -1,3 +1,7 @@
+button {
+    cursor: pointer;
+}
+
 .flexBox {
     display: flex;
     align-items: center;
@@ -5,16 +9,16 @@
 }
 .generalTexts{
     color: white;
-    font-family: DosisLight, serif;
+    font-family: DosisRegular, serif;
 }
 .centeredTexts{
     color: white;
-    font-family: DosisLight, serif;
+    font-family: DosisRegular, serif;
     text-align: center;
 }
 .clickableTexts{
     color: white;
-    font-family: DosisLight, serif;
+    font-family: DosisRegular, serif;
     text-align: center;
     cursor: pointer;
 }
@@ -33,8 +37,8 @@
 
 .headerText{
     margin-top: 1rem;
-    font-size: 2rem;
-    font-family: DosisMedium, serif
+    font-size: 1.2rem;
+    font-family: DosisRegular, serif
 }
 
 .image {
@@ -48,7 +52,7 @@
 }
 
 .tabButton{
-    font-family: DosisLight, serif;
+    font-family: DosisRegular, serif;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
     background: #141117;
@@ -58,17 +62,27 @@
 }
 
 .projButton{
-    font-family: DosisLight, serif;
+    font-family: DosisRegular, serif;
     margin-top: 1rem;
     background: #141117;
-    color: white;
+    color: #c1c1c1;
     border: 1px solid #141117;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 .creditsText{
     color: white;
-    font-family: DosisLight, serif;
+    font-family: DosisRegular, serif;
     text-align: center;
     margin-top: 0.5rem;
+}
+
+#showMore{
+    border: none;
+    color: white;
+    background-color: #141117;
+    margin-top: 1rem;
+    font-family: DosisRegular, serif;
+    font-style: italic;
 }
