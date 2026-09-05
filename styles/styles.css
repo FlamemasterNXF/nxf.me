@@ -77,12 +77,16 @@ button {
     text-align: center;
     margin-top: 0.5rem;
 }
-
-#showMore{
+.bottomButton{
     border: none;
     color: white;
     background-color: #141117;
     margin-top: 1rem;
     font-family: DosisRegular, serif;
     font-style: italic;
+    font-size: 0.9rem;
+}
+
+.noColor * {
+    color: white !important;
 }
